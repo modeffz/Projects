@@ -1,0 +1,17 @@
+{
+  "verification": {
+    "verifChanId": "1267461674881908830"
+  },
+  "1267461515699552357_roleplay": {
+    "applicationChannelId": "1267461515699552359",
+    "reviewChannelId": "1267461674881908830",
+    "categories": [],
+    "enabled": true
+  },
+  "1267461515699552357_verification": {
+    "verificationChannelId": "1267461515699552359",
+    "logsChannelId": "1267461674881908830",
+    "verifiedRoleId": "1343357742013747261",
+    "enabled": true
+  }
+}

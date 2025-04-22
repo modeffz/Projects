@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Майстерня ноутбуків | Сервіс та ремонт</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #0057b7;
+      --secondary: #ffc107;
+      --bg: #f4f4f4;
+      --text: #222;
+      --accent: #00bcd4;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Manrope', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: slideUp 1s forwards;
+    }
+
+    section:nth-child(even) {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      margin-top: 2rem;
+    }
+
+    h2 {
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1rem;
+      line-height: 1.8;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border-bottom: 1px solid #ddd;
+      padding: 12px;
+    }
+
+    th {
+      background: var(--primary);
+      color: white;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: var(--primary);
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: var(--accent);
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+
+    @keyframes slideUp {
+      0% {opacity: 0; transform: translateY(30px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Майстерня ноутбуків</h1>
+    <p>Ремонтуємо швидко, чесно і з гарантією. Працюємо щодня.</p>
+    <nav>
+      <a href="#services">Послуги</a>
+      <a href="#prices">Ціни</a>
+      <a href="#about">Про нас</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+  </header>
+
+  <section id="services">
+    <h2>Наші послуги</h2>
+    <ul>
+      <li>Заміна екрану, клавіатури, батареї</li>
+      <li>Чищення від пилу, заміна термопасти</li>
+      <li>Встановлення Windows / Linux</li>
+      <li>Оновлення SSD, RAM, BIOS</li>
+      <li>Відновлення після залиття</li>
+    </ul>
+  </section>
+
+  <section id="prices">
+    <h2>Приблизні ціни</h2>
+    <table>
+      <tr><th>Послуга</th><th>Вартість від</th></tr>
+      <tr><td>Діагностика</td><td>Безкоштовно</td></tr>
+      <tr><td>Заміна екрану</td><td>1500 ₴</td></tr>
+      <tr><td>Чищення системи охолодження</td><td>1000 ₴</td></tr>
+      <tr><td>Налаштування ОС</td><td>800 ₴</td></tr>
+    </table>
+  </section>
+
+  <section id="about">
+    <h2>Про нас</h2>
+    <p>Наша майстерня — це команда сертифікованих спеціалістів з досвідом понад 10 років. Ми ремонтуємо техніку будь-якої складності й завжди пояснюємо клієнту, що робимо. Якість, чесність, гарантія.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Зв’язок з нами</h2>
+    <p><strong>Телефон:</strong> +38 (067) 123-45-67</p>
+    <p><strong>Адреса:</strong> м. Київ, вул. Сервісна, 1</p>
+    <p><strong>Email:</strong> help@noutservice.ua</p>
+    <form>
+      <input type="text" name="name" placeholder="Ваше ім’я" required />
+      <input type="tel" name="phone" placeholder="Телефон" required />
+      <textarea name="message" rows="4" placeholder="Ваше повідомлення" required></textarea>
+      <button type="submit">Надіслати</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Майстерня ноутбуків. Усі права захищено.</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.animationDelay = "0.2s";
+            entry.target.style.animation = "slideUp 0.8s ease-out forwards";
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>

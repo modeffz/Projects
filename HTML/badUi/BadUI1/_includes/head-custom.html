@@ -1,0 +1,29 @@
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/BadUI/assets/images/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/BadUI/assets/images/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/BadUI/assets/images/favicon-16x16.png?v=1">
+<link rel="manifest" href="/BadUI/assets/images/site.webmanifest?v=1">
+<link rel="mask-icon" href="/BadUI/assets/images/safari-pinned-tab.svg?v=1" color="#5bbad5">
+<link rel="shortcut icon" href="/BadUI/assets/images/favicon.ico?v=1">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/BadUI/assets/images/browserconfig.xml?v=1">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}">
+<meta property="og:title" content="{% if site.title %}{{ site.title }}{% else %}{{ site.name }}{% endif %}">
+<meta property="og:description" content="{% if site.description %}{{ site.description }}{% else %}{{ site.title }}{% endif %}">
+<!-- logo: /assets/images/Awesome BadUI.png | prepend url -->
+<meta property="og:image" content="{% if site.logo %}{{ site.logo | prepend: site.url }}{% else %}{{ '/assets/images/Awesome BadUI.png' | prepend: site.url }}{% endif %}">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://goulartnogueira.github.io/BadUI/">
+<meta property="twitter:title" content="{% if site.title %}{{ site.title }}{% else %}{{ site.name }}{% endif %}">
+<meta property="twitter:description" content="{% if site.description %}{{ site.description }}{% else %}{{ site.title }}{% endif %}">
+<meta property="twitter:image" content="{% if site.logo %}{{ site.logo | prepend: site.url }}{% else %}{{ '/assets/images/Awesome BadUI.png' | prepend: site.url }}{% endif %}">

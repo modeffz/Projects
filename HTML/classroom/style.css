@@ -1,9 +1,132 @@
-#score {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: white;
+/* Мінімалістичні стилі для партнерів */
+.partners-minimal {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
+.partners-minimal h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00ff9d;
+}
+
+.partner-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.partner-item {
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #00ff9d;
+}
+
+.partner-item h3 {
+    color: #00ff9d;
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+}
+
+.partner-item p {
+    color: #ccc;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+
+
+
+
+
+
+.articles-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.articles-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.article-card {
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.article-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.article-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.article-content h2 {
+    margin-top: 0;
+    color: #00ff9d;
+}
+
+.article-meta {
+    color: #aaa;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: #008cff;
+    font-weight: 500;
+}
+
+.read-more:hover {
+    color: #00ff9d;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .article-card {
+        flex-direction: column;
+    }
+    
+    .article-image {
+        width: 100%;
+        height: 180px;
+    }
+}
+
+@font-face {
+    font-family: 'Tanada Blood';
+    src: url('fonts/RuthlessSketch.ttf') format('truetype');
+}
+
+h1, h2, h3 {
+    font-family: 'Tanada Blood', cursive;
+    color: #00ff9d;             
+}
+
+a {
+    color: #008cff; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00ff9d; 
+    text-decoration: underline;
+}
 
 .profile-header {
     display: flex;
@@ -110,6 +233,22 @@ body section ul {
     height: 200px;
     width: 200px;
     border-radius: 50%;
+}
+
+.message-box {
+    height: 200px;
+    width: 200px;
+    margin-left: -70px;
+    margin-bottom: auto;
+    transform: rotate(15deg) translateY(-50px);
+    box-shadow: #000000;
+}
+
+.message-text {
+    color: red;
+    font-size: smaller;
+    transform: translateY(-190px) rotate(10deg) translateX(198px);
+    text-shadow: #000000;
 }
 
 body header section2 {
